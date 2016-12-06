@@ -201,4 +201,9 @@ sub getID{
     return $self->{"_ID"};
 }
 
+sub getOffset{
+    my($self) = @_;
+    return $self->{"_Z0"};
+}
+
 1;
