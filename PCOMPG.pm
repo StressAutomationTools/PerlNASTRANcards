@@ -64,7 +64,7 @@ sub new {
         $parts[6] = '';
     }
     else{
-        $parts[6] = $fields[5];
+        $parts[6] = $fields[6];
     }
     #GE
     if(not $fields[7]){
@@ -106,7 +106,7 @@ sub new {
             elsif($1 >= 22.5 and $1 <= 67.5){
                 $THETA = 45;
             }
-            elsif($1 < 67.5 and $1 < 112.5){
+            elsif($1 > 67.5 and $1 < 112.5){
                 $THETA = 90;
             }
             elsif($1 >= -67.5 and $1 <= -22.5){
